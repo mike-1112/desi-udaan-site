@@ -1,0 +1,45 @@
+name: Desi Udaan support
+description: Report a gameplay, display, sound, or language problem.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping the bird fly better! Please do not include passwords or private information.
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Phone or tablet model
+      placeholder: e.g. iPhone 16 or Samsung Galaxy Tab S10
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. iOS 26.0 or Android 16
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Game language
+      options:
+        - Hindi
+        - Urdu
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Tell us what you expected and what occurred instead. You may attach a screenshot.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the game\n2. Tap...\n3. See..."
